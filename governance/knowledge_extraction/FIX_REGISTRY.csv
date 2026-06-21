@@ -1,0 +1,6 @@
+fix_id,protocolo,bug_id_alvo,descricao_fix,arquivo,linha,status_validacao,evidencia_runtime,observacao,task_id
+FMED-02,FMED-02,,Correcao inicial pipeline/telemetria,,,A_CONFIRMAR,,Reconferir no snapshot congelado,
+FMED-03,FMED-03,,Overnight instrumentado de decisoes,,,A_CONFIRMAR,RT-03,13640 decisoes 100% HOLD conf 0.0,
+FMED-04,FMED-04,,Relatorio executivo conselho,,,A_CONFIRMAR,,,
+FMED-05,FMED-05,,Validacao de correcoes,,,A_CONFIRMAR,,,
+FMED-05B,FMED-05B,FND-11,Claim de fix RSI + 'SISTEMA PRONTO',shadow_loop_v33_final.py,1552,REFUTADO,,FND-11 persistia; sem validacao runtime pos-fix (RT-04),

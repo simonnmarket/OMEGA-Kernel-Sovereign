@@ -1,0 +1,8 @@
+runtime_id,tipo,nome,arquivo,papel,ambiente,status,evidencia,observacao,task_id
+RT-ENG-A,motor,Universo A,shadow_loop_v33_final.py,Motor oficial do Conselho,indefinido,CONTAMINADO,FND-04;FND-06;FND-11,Motor candidato a fonte de componentes aprovados,
+RT-ENG-B,motor,Universo B (legacy),shadow_loop.py,Monolito legacy,indefinido,CRASH,RT-01,NameError MT5BulletproofLayer no startup,
+RT-LNCH-1,launcher,launch_24h_clean,launch_24h_clean.py,Launcher limpo,indefinido,A_CONFIRMAR,,Aponta para shadow_loop_v33_final.py,
+RT-LNCH-2,launcher,run_omega_24x7,scripts/run_omega_24x7.ps1,Launcher legacy,indefinido,CONTAMINADO,,Injeta flags massivas de ambiente,
+RT-LNCH-3,launcher,omega_paper_loop_24x7,scripts/omega_paper_loop_24x7.py,Spawner,indefinido,A_CONFIRMAR,,Faz spawn de shadow_loop.py,
+RT-FLAG-01,flag,live_flags.json,config/live_flags.json,Flags congeladas,indefinido,EXPIRADO,FND-03,Freeze date expirada,
+RT-RUN-03,execucao,overnight fmed03,audit/forensic/fmed03_overnight_20260617_230000/strategy_decision_log.jsonl,Log de decisoes,indefinido,ANALISADO,RT-03,13640 decisoes 100% HOLD conf 0.0,

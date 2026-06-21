@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.Python
+
+# Ambientes / segredos (NUNCA versionar)
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials*.json
+
+# Runtime / logs / estado (isolados por ambiente, não versionar dados)
+runtime/dev/*
+runtime/test/*
+runtime/demo/*
+runtime/exec/*
+!runtime/**/.gitkeep
+logs/
+*.log
+*.lock
+*.lockfile
+
+# Auditoria gerada em execução (preservar estrutura, não dados)
+audit/*
+!audit/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Dados de mercado / artefatos pesados
+*.csv.gz
+*.parquet
+data/
