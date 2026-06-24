@@ -132,3 +132,45 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 **STATUS:** CONCLUÍDO — PR pendente merge  
 
 **PRÓXIMO SYNC-IN ESPERADO:** TASK-0023-INITIATION (Conselho → AIC/PSA)
+
+---
+
+## SYNC-IN | 2026-06-25
+
+**REF:** TASK-0023-INITIATION-001  
+**ORIGEM:** Conselho / CEO  
+**BASE:** ADR-012 · DEC-GATE-MIG2-001  
+
+**AUTORIZADO:**
+1. TASK-0023 — MIG-3 Charter (Position Manager — definição arquitetural only)
+2. Revisão técnica AIC + parecer formal
+
+**PROIBIDO:**
+- Implementação código · order_send · Execution · Risk · Reconciliation · SIVR-1
+
+**STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (charter only)
+
+---
+
+## SYNC-OUT | 2026-06-25 (AIC → PSA)
+
+**REF:** TASK-0023-SYNC-OUT-001  
+**TASK:** TASK-0023 — MIG-3 Charter (revisão técnica AIC)  
+**ENTREGÁVEL:** `governance/TASK-0023-MIG3-CHARTER-AIC-001.md`  
+**VEREDITO AIC:** FAVORÁVEL COM RESSALVAS DE SEQUÊNCIA  
+**DIVERGÊNCIAS:** DIV-AIC-M3-01 .. DIV-AIC-M3-05  
+
+**COMPLIANCE TASK-0023-INITIATION-001:**
+- Sem código executável ✅
+- Sem order_send / execution / risk / SIVR-1 ✅
+
+**STATUS:** ENTREGUE AO PSA — aguardando validação  
+
+**SOLICITAÇÃO PSA:**
+1. Validar aderência ao charter PSA
+2. Avaliar DIV-AIC-M3-*
+3. Consolidar versão PSA+AIC
+4. Emitir parecer PASS/FAIL documental
+5. Encaminhar ao Conselho
+
+**PRÓXIMO SYNC-IN ESPERADO:** Parecer PSA TASK-0023 (PSA → AIC/Conselho)
