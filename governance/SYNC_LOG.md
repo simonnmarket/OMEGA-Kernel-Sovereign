@@ -28,9 +28,8 @@ Registro auditável de pacotes SYNC-IN (PSA → AIC) e SYNC-OUT (AIC → PSA).
 
 **TASK:** TASK-0018 + TASK-0020  
 **AÇÃO:** Consolidação ETAPA 0 — Governança (PSA, 6 MIGs, ADR-012, DEC-15, remoção Taskade)  
-**COMMIT/PR:** *(preencher após commit/PR)*  
-**ARQUIVOS:** `governance/**` (SYNC_*, ADR-012, registries, allowlist, README)  
-**CI:** *(preencher após PR)*  
-**STATUS:** em execução  
+**COMMIT/PR:** branch `task-0018-sync` · commit `af27a2b` · abrir PR → main  
+**CI:** aguardando PR  
+**STATUS:** concluído (aguardando merge)  
 
 **ATUALIZAR NO PSA-WORKSPACE:** registrar fechamento ETAPA 0 e GATE-0 Governança após merge
