@@ -27,6 +27,7 @@ runtime/exec/*
 !runtime/**/.gitkeep
 logs/
 *.log
+sivr/logs/
 *.lock
 *.lockfile
 

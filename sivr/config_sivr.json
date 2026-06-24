@@ -1,0 +1,14 @@
+{
+  "run_id": "SIVR-0",
+  "symbol": "XAUUSD",
+  "timeframe": "M1",
+  "cycles": 100,
+  "cycle_interval_seconds": 1.0,
+  "bars_required": 120,
+  "rsi_period": 14,
+  "ema_period": 10,
+  "signal_rsi_buy_below": 30.0,
+  "signal_rsi_sell_above": 70.0,
+  "mt5_path": null,
+  "log_dir": "sivr/logs"
+}

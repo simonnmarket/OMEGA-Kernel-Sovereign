@@ -5,8 +5,8 @@ description = "OMEGA Kernel Sovereign - Institutional Trading System with Multi-
 requires-python = ">=3.11"
 readme = "README.md"
 dependencies = [
-    # Adicionar dependências apenas via Task aprovada (Taskade). Versões fixadas.
-    # "MetaTrader5==5.0.45",
+    # Adicionar dependências apenas via Task aprovada. Versões fixadas.
+    "MetaTrader5==5.0.45",
 ]
 
 [project.optional-dependencies]
