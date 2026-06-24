@@ -84,3 +84,49 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 4. Manter bloqueio implementação MIG-1 até aprovação Charter
 
 **PRÓXIMO SYNC-IN ESPERADO:** TASK-0021 Charter aprovado (PSA → AIC)
+
+---
+
+## SYNC-IN | 2026-06-25
+
+**REF:** TASK-0022-INITIATION-001 · CEO-DIRECTIVE-021  
+**ORIGEM:** CEO / Conselho  
+**BASE:** SABM-001 · SIVR-0-CLOSURE-001 · AIC-CONCLUSION-SIVR1-GATE-MIG1-001 · TASK-0022-MIG2-CHARTER (PSA)
+
+**AUTORIZADO:**
+1. TASK-0022 — MIG-2 Charter (definição arquitetural only)
+2. Produção TASK-0022-MIG2-CHARTER-AIC-001
+
+**PROIBIDO:**
+- Implementação MIG-2
+- SIVR-1 / execution / reconciliation / failure injection / order_send
+
+**STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (charter only)
+
+---
+
+## SYNC-OUT | 2026-06-25 (AIC → PSA)
+
+**REF:** TASK-0022-SYNC-OUT-001  
+**TASK:** TASK-0022 — MIG-2 Charter (revisão técnica AIC)  
+**AÇÃO:** Entrega formal charter consolidado AIC para validação PSA  
+**ENTREGÁVEL:** `governance/TASK-0022-MIG2-CHARTER-AIC-001.md`  
+**VEREDITO AIC:** FAVORÁVEL COM RESSALVAS ESTRUTURAIS  
+**DIVERGÊNCIAS:** DIV-AIC-01 .. DIV-AIC-05  
+
+**COMPLIANCE TASK-0022-INITIATION-001:**
+- Sem código executável ✅
+- Sem order_send / execution layer ✅
+- Sem runtime expansion ✅
+- SIVR-1 congelado ✅
+
+**STATUS:** ENTREGUE AO PSA — aguardando validação  
+
+**SOLICITAÇÃO PSA:**
+1. Validar aderência ao charter PSA
+2. Avaliar DIV-AIC-*
+3. Consolidar versão PSA+AIC
+4. Emitir parecer PASS/FAIL documental
+5. Encaminhar ao Conselho
+
+**PRÓXIMO SYNC-IN ESPERADO:** Parecer PSA TASK-0022 (PSA → AIC/Conselho)

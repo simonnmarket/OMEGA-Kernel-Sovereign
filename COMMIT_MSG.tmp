@@ -1,0 +1,12 @@
+[TASK-0018] [TASK-0020] governance: ETAPA 0 — PSA + 6 MIGs + ADR-012 + DEC-15
+
+SYNC-IN: CFO-RATIFICATION-001 (2026-06-24)
+
+- PSA substitui Taskade como autoridade documental
+- Modelo oficial 6 MIGs (CFO-RAT-20260623-03)
+- ADR-012 Plano Mestre + DEC-15
+- SYNC_PROTOCOL.md + SYNC_LOG.md (CFO-DIR-20260623-01 adaptado PSA)
+- BUG_REGISTRY, MIGRATION_ALLOWLIST, DECISION_REGISTRY, KMI atualizados
+- README, DECLARACAO_SOBERANIA, contracts, adr/README alinhados
+
+GATE-0 GOVERNANÇA: pronto para merge
