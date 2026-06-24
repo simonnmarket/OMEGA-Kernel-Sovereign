@@ -84,3 +84,51 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 4. Manter bloqueio implementação MIG-1 até aprovação Charter
 
 **PRÓXIMO SYNC-IN ESPERADO:** TASK-0021 Charter aprovado (PSA → AIC)
+
+---
+
+## SYNC-IN | 2026-06-25
+
+**REF:** DEC-GATE-MIG2-001 · DEC-MIG2-001 · GATE-MIG2-PARECER-PSA-001  
+**ORIGEM:** Conselho / CEO / CFO  
+
+**DECISÕES RATIFICADAS:**
+1. GATE-MIG2 — ✅ FECHADO
+2. MIG-2 — ✅ VALIDADO (Market Data Engine soberano)
+3. TASK-0022 — ✅ ENCERRADA
+
+**PROIBIDO:**
+- SIVR-1 · order_send · Execution · Risk · operações financeiras
+
+**STATUS:** RATIFICADO — em vigor
+
+---
+
+## SYNC-IN | 2026-06-25
+
+**REF:** TASK-0023-PREPARATION-001  
+**ORIGEM:** Conselho / CEO  
+
+**AUTORIZADO:**
+- Commit + PR dos artefatos de governança GATE-MIG2
+
+**NÃO AUTORIZADO:**
+- TASK-0023 MIG-3 Charter (aguardar diretiva de início)
+
+**STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (governance only)
+
+---
+
+## SYNC-OUT | 2026-06-25 (AIC → PSA)
+
+**REF:** TASK-0023-PREPARATION-001 · DEC-GATE-MIG2-001  
+**AÇÃO:** Sincronização registros governança pós-fechamento GATE-MIG2  
+**ARQUIVOS:**
+- `governance/DEC-GATE-MIG2-001.md` [NOVO]
+- `governance/knowledge_extraction/DECISION_REGISTRY.csv` [DEC-MIG2-001, DEC-GATE-MIG2-001]
+- `governance/MIGRATION_ALLOWLIST.md` [MIG-1/MIG-2 GATE FECHADO]
+- `governance/SYNC_LOG.md` [ATUALIZADO]
+
+**STATUS:** CONCLUÍDO — PR pendente merge  
+
+**PRÓXIMO SYNC-IN ESPERADO:** TASK-0023-INITIATION (Conselho → AIC/PSA)
