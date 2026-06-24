@@ -1,6 +1,6 @@
 # SYNC Log — OMEGA Kernel Sovereign V6
 
-Registro auditável de pacotes SYNC-IN (PSA → AIC) e SYNC-OUT (AIC → PSA).
+Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AIC → PSA).
 
 ---
 
@@ -24,12 +24,63 @@ Registro auditável de pacotes SYNC-IN (PSA → AIC) e SYNC-OUT (AIC → PSA).
 
 ---
 
-## SYNC-OUT | 2026-06-24
+## SYNC-OUT | 2026-06-24 (AIC → PSA)
 
 **TASK:** TASK-0018 + TASK-0020  
 **AÇÃO:** Consolidação ETAPA 0 — Governança (PSA, 6 MIGs, ADR-012, DEC-15, remoção Taskade)  
-**COMMIT/PR:** branch `task-0018-sync` · commit `af27a2b` · abrir PR → main  
-**CI:** aguardando PR  
-**STATUS:** concluído (aguardando merge)  
+**COMMIT:** `7f15073` em `main`  
+**CI:** pytest 4/4 local; GitHub Actions no push  
+**STATUS:** CONCLUÍDO  
 
-**ATUALIZAR NO PSA-WORKSPACE:** registrar fechamento ETAPA 0 e GATE-0 Governança após merge
+**ATUALIZAR NO PSA-WORKSPACE:** registrar fechamento ETAPA 0 e GATE-0 Governança
+
+---
+
+## SYNC-IN | 2026-06-24
+
+**REF:** CFO-RAT-20260624-002 (CFO-RATIFICATION-002)  
+**ORIGEM:** CFO + Conselho  
+**BASE:** PSA-ONBOARDING-REPORT-V6, PSA-REPORT-002, PSA-RESPONSE-CFO-001, SYNC-OUT AIC, commit `7f15073`
+
+**DECISÕES RATIFICADAS:**
+1. ETAPA 0 — ✅ CONCLUÍDA
+2. GATE-0 GOVERNANÇA — ✅ FECHADO (2026-06-24)
+3. PSA — integração plenamente aprovada
+4. Segregação PSA ↔ AIC — mantida
+5. Taskade — removido (DEC-4 → DEC-15)
+6. MIG-1 Charter (TASK-0021) — preparação autorizada (PSA)
+7. Implementação MIG-1 — 🔒 BLOQUEADA até aprovação do Charter
+
+**PRÓXIMO TASK LIVRE:** TASK-0021 (MIG-1 Charter — responsabilidade PSA)  
+**EXECUTAR AGORA (AIC):** housekeeping governance autorizado pelo CFO  
+**RESTRIÇÕES:** runtime, strategy, execution, deployment — proibidos até Charter MIG-1
+
+**STATUS:** RATIFICADO
+
+---
+
+## SYNC-OUT | 2026-06-24 (AIC → PSA) — FINAL
+
+**REF:** CFO-RAT-20260624-002  
+**TASK:** housekeeping governance (autorizado CFO)  
+**AÇÃO:** Espelhamento ratificação CFO — DEC-16, SYNC_PROTOCOL v2.0, relatório ETAPA 0  
+**COMMIT:** branch `main` · `[TASK-0020] docs(governance): housekeeping CFO-RAT-20260624-002 e DEC-16`  
+**ARQUIVOS:**
+- `governance/CFO-RAT-20260624-002.md` [NOVO]
+- `governance/ETAPA0-RELATORIO-CONCLUSAO-CONSELHO.md` [NOVO]
+- `governance/SYNC_LOG.md` [ATUALIZADO]
+- `governance/SYNC_PROTOCOL.md` [v2.0]
+- `governance/knowledge_extraction/DECISION_REGISTRY.csv` [DEC-16]
+- `governance/adr/README.md` [DEC-16]
+- `README.md` [status ETAPA 0 / GATE-0]
+
+**CI:** pytest 4/4 local  
+**STATUS:** CONCLUÍDO  
+
+**ATUALIZAR NO PSA-WORKSPACE:**
+1. Confirmar DEC-16 ↔ CFO-RAT-20260624-002
+2. Registrar GATE-0 GOVERNANÇA = FECHADO (2026-06-24)
+3. Iniciar TASK-0021 — MIG-1 Indicator Engine Charter
+4. Manter bloqueio implementação MIG-1 até aprovação Charter
+
+**PRÓXIMO SYNC-IN ESPERADO:** TASK-0021 Charter aprovado (PSA → AIC)

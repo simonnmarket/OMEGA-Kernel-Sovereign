@@ -1,6 +1,6 @@
 # Protocolo Oficial de Sincronização Manual
 
-**ID:** CFO-DIR-20260623-01 (adaptado PSA) · **Status:** RATIFICADO · **Data:** 2026-06-24
+**ID:** CFO-DIR-20260623-01 (adaptado PSA) · **Versão:** 2.0 · **Status:** RATIFICADO · **Data:** 2026-06-24
 
 ## Objetivo
 

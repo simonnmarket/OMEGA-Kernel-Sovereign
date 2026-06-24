@@ -67,5 +67,6 @@ OMEGA-KERNEL-SOVEREIGN/
 
 ## Status atual
 
-- **ETAPA 0 — Governança:** consolidação em PR (TASK-0018 + TASK-0020).
-- **Próximo:** MIG-1 Charter (após merge ETAPA 0).
+- **ETAPA 0 — Governança:** ✅ CONCLUÍDA (commit `7f15073`, CFO-RAT-20260624-002).
+- **GATE-0 GOVERNANÇA:** ✅ FECHADO (2026-06-24).
+- **Próximo:** TASK-0021 — MIG-1 Charter (PSA prepara; implementação 🔒 bloqueada).

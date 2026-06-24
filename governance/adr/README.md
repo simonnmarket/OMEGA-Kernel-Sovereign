@@ -30,3 +30,4 @@ Consequências** e (quando aplicável) **Supersede** e **Resolve (BUG)**.
 | DEC-2 | ADR-007 |
 | DEC-6 / DEC-GATE0-* | ADR-008..011 |
 | DEC-15 | ADR-012 |
+| DEC-16 | ADR-012 (GATE-0 Governança fechado; MIG-1 Charter) |
