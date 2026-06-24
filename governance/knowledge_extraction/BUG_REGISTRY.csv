@@ -2,10 +2,10 @@ bug_id,severidade,decisao_migracao,titulo,ref_historica,arquivo_evidencia,linha_
 BUG-001,CRITICO,MIGRAR_V6,Key mismatch RSI 'rsi' vs 'rsi_14' -> RSI=None -> confianca=0.0 -> 100% HOLD eterno,FND-11,shadow_loop_v33_final.py,1777,ADR-010,MIG-1,A_VALIDAR
 BUG-002,CRITICO,MIGRAR_V6,Fallback sintetico _get_sample_data() retorna preco fixo 2650.50 -> ordem real sobre dado falso,FND-06,agent_ia/core/omega_strategy_catalog.py,1193,ADR-010,MIG-2,A_VALIDAR
 BUG-003,ALTO,MIGRAR_V6,8 filtros PASS hardcoded sem avaliacao individual,FND-10,shadow_loop_v33_final.py,1917-1937,ADR-010,MIG-1,A_VALIDAR
-BUG-004,ALTO,MIGRAR_V6,Env vars de teste sem gating: flags dev vazam para exec,FND-08,shadow_loop.py,544,ADR-009;ADR-011,MIG-5,A_VALIDAR
+BUG-004,ALTO,MIGRAR_V6,Env vars de teste sem gating: flags dev vazam para exec,FND-08,shadow_loop.py,544,ADR-009;ADR-011,MIG-6,A_VALIDAR
 BUG-005,CRITICO,NAO_MIGRAR,Motor legacy nao inicializa - falha silenciosa,RT-01,shadow_loop.py,3389,ADR-008,-,FORENSE
-BUG-006,ALTO,MIGRAR_V6,SL/TP nao derivam do sinal da estrategia,FND-04,shadow_loop_v33_final.py,2063,ADR-010,MIG-5,A_VALIDAR
+BUG-006,ALTO,MIGRAR_V6,SL/TP nao derivam do sinal da estrategia,FND-04,shadow_loop_v33_final.py,2063,ADR-010,MIG-4,A_VALIDAR
 BUG-007,CRITICO,NAO_MIGRAR,2 motores paralelos sem soberano - problema de governanca,FND-01,-,-,ADR-008,-,FORENSE
 BUG-008,ALTO,NAO_MIGRAR,Logs sinteticos + 100% HOLD eterno,RT-02;RT-03,-,-,ADR-010,-,FORENSE
-BUG-009,MEDIO,MIGRAR_V6,Lockfiles orfaos sem referencia ao runtime ativo,FND-02,audit/paper/omega_runner.lock,-,ADR-011,MIG-5,A_VALIDAR
-BUG-010,MEDIO,MIGRAR_V6,Flags congeladas/expiradas sem consumidor,FND-03,config/live_flags.json,-,ADR-011,MIG-5,A_VALIDAR
+BUG-009,MEDIO,MIGRAR_V6,Lockfiles orfaos sem referencia ao runtime ativo,FND-02,audit/paper/omega_runner.lock,-,ADR-011,MIG-6,A_VALIDAR
+BUG-010,MEDIO,MIGRAR_V6,Flags congeladas/expiradas sem consumidor,FND-03,config/live_flags.json,-,ADR-011,MIG-6,A_VALIDAR

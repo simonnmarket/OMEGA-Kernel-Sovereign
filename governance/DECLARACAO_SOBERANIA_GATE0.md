@@ -21,13 +21,13 @@
 
 ### 3. Qual é o **fluxo soberano**? → ADR-010
 - **Canônico:** `data → indicators → strategy → risk → execution → telemetry`.
-- **Regras:** fail-closed ⇒ HOLD; sem dados sintéticos; SL/TP do sinal (execução em MIG-5);
-  guards + kill switch; chaves de indicador padronizadas por contrato.
+- **Regras:** fail-closed ⇒ HOLD; sem dados sintéticos; SL/TP do sinal (MIG-4/MIG-6);
+  guards + kill switch (MIG-6); chaves de indicador padronizadas por contrato (MIG-1).
 
 ### 4. Qual é o **ambiente soberano**? → ADR-011
 - **Canônico:** `OMEGA_ENV ∈ {dev, test, demo, exec}`, explícito, isolado por ambiente.
 - **Regras:** precedência `arquivo > env` (ou `env` com gating auditado); guard DEMO×REAL no
-  Execution Engine (condição sine qua non do CFO).
+  Execution Engine — MIG-6 (condição sine qua non do CFO).
 
 ---
 
@@ -46,5 +46,6 @@
 ---
 
 ## Vínculo de governança
-- Fonte de verdade: **Taskade** (Conselho → Taskade → Especificação → ...).
-- Decisões formalizadas: **DEC-GATE0-1..4 ↔ ADR-008..011** (ver `adr/README.md` e `DECISION_REGISTRY.csv`).
+- Fonte documental: **PSA** (`OMEGA-PSA-AUDIT-WORKSPACE`).
+- Fluxo: Conselho → PSA → Especificação → AIC → Implementação → Teste → Merge.
+- Decisões: **DEC-GATE0-1..4 ↔ ADR-008..011** · Plano Mestre: **DEC-15 ↔ ADR-012**.

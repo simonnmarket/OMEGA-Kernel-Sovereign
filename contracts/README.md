@@ -28,6 +28,6 @@ Um componente do `OMEGA_V55_FROZEN` só pode ser portado quando:
 1. Seu **contrato** existe aqui e foi revisado.
 2. Sua **interface** está definida.
 3. Existe **teste** verde cobrindo o contrato.
-4. Há **aprovação documental no Taskade** (GATE-3).
+4. Há **aprovação documental no PSA** (GATE-3).
 
 Ver `governance/MIGRATION_ALLOWLIST.md`.
