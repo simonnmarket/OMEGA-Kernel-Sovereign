@@ -152,3 +152,46 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 **STATUS:** ENTREGUE AO PSA
 
 **PRÓXIMO SYNC-IN ESPERADO:** Parecer PSA TASK-0023 · DEC-MIG3
+
+---
+
+## SYNC-IN | 2026-06-27
+
+**REF:** CEO-DIRECTIVE-022  
+**ORIGEM:** Conselho / CEO  
+
+**AUTORIZADO:**
+- Merge governança GATE-MIG2 → main
+- Merge implementação MIG-2 → main
+- Linha-base oficial V6 (MIG-1 + MIG-2 + CI)
+
+**PROIBIDO:** Implementação MIG-3 · order_send · SIVR-1 · MIG-4..6
+
+**STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (sync only)
+
+---
+
+## SYNC-OUT | 2026-06-27 (AIC → PSA)
+
+**REF:** CEO-DIRECTIVE-022 · END-OF-CYCLE-MIG3-SYNC-001  
+**AÇÃO:** Consolidação linha-base oficial V6 em `main`  
+**BRANCH INTEGRAÇÃO:** `v6-baseline-consolidation`  
+
+**MERGES REALIZADOS:**
+1. `sivr-0-run` — MIG-2 código + SIVR-0 MT5 path
+2. `gate-mig2-governance` — DEC-GATE-MIG2-001, allowlist, DEC registry
+3. `mig-3-position-manager` — TASK-0023-MIG3-CHARTER-PSA-001 (charter only)
+
+**CI:** pytest **35/35 PASS**  
+**COMPONENTES NA LINHA-BASE:**
+- MIG-1 `indicator_engine/`
+- MIG-2 `market_data/` + `contracts/market_data_contract.py`
+- Governança GATE-MIG1/MIG-2 + charter MIG-3 (documental)
+- SIVR-0 harness (`sivr/`)
+
+**CONFIRMAÇÕES:**
+- `main` representa estado institucional aprovado (pós-push)
+- Implementação MIG-3 **NÃO AUTORIZADA**
+- SIVR-1 congelado
+
+**PRÓXIMO SYNC-IN ESPERADO:** DEC-MIG3 (Conselho)
