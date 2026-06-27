@@ -195,3 +195,36 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 - SIVR-1 congelado
 
 **PRÓXIMO SYNC-IN ESPERADO:** DEC-MIG3 (Conselho)
+
+---
+
+## SYNC-IN | 2026-06-27
+
+**REF:** DEC-MIG3-001  
+**ORIGEM:** Conselho / CEO  
+
+**AUTORIZADO:** Implementação MIG-3 (escopo charter TASK-0023)  
+**PROIBIDO:** order_send · MIG-4..6 · SIVR-1 · Reconciliation  
+
+**STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (implementação MIG-3 only)
+
+---
+
+## SYNC-OUT | 2026-06-27 (AIC → PSA)
+
+**REF:** DEC-MIG3-001  
+**AÇÃO:** Implementação MIG-3 Position Manager  
+**EVIDÊNCIA:**
+- `contracts/position_contract.py`
+- `position_manager/` (ledger, validator, exposure, manager, sync mock+mt5)
+- `tests/test_position_manager.py` — CA-01..CA-08
+- pytest **45/45 PASS**
+
+**COMPLIANCE:**
+- Zero `order_send()` no package ✅
+- Fail-closed ✅
+- MockBrokerSync em CI (CA-06) ✅
+
+**STATUS:** IMPLEMENTAÇÃO ENTREGUE — aguardando GATE-MIG3-PARECER-PSA-001  
+
+**NOTA:** GATE-MIG3 **não fechado** — pendente parecer PSA + DEC-GATE-MIG3-001

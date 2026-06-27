@@ -22,6 +22,21 @@ from contracts.market_data_contract import (
     UnsupportedSymbolError,
     UnsupportedTimeframeError,
 )
+from contracts.position_contract import (
+    ExposureSummary,
+    PositionDesyncError,
+    PositionError,
+    PositionEvent,
+    PositionManager,
+    PositionNotFoundError,
+    PositionSide,
+    PositionSnapshot,
+    PositionStateError,
+    PositionStatus,
+    PositionSyncAdapter,
+    PositionSyncError,
+    PositionTicket,
+)
 
 __all__ = [
     "IndicatorEngine",
@@ -42,4 +57,17 @@ __all__ = [
     "ProviderConfig",
     "UnsupportedSymbolError",
     "UnsupportedTimeframeError",
+    "ExposureSummary",
+    "PositionDesyncError",
+    "PositionError",
+    "PositionEvent",
+    "PositionManager",
+    "PositionNotFoundError",
+    "PositionSide",
+    "PositionSnapshot",
+    "PositionStateError",
+    "PositionStatus",
+    "PositionSyncAdapter",
+    "PositionSyncError",
+    "PositionTicket",
 ]
