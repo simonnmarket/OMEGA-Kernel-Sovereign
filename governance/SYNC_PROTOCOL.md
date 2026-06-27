@@ -1,6 +1,7 @@
 # Protocolo Oficial de Sincronização Manual
 
-**ID:** CFO-DIR-20260623-01 (adaptado PSA) · **Versão:** 2.0 · **Status:** RATIFICADO · **Data:** 2026-06-24
+**ID:** CFO-DIR-20260623-01 (adaptado PSA) · **Versão:** 3.0 · **Status:** RATIFICADO · **Data:** 2026-06-27  
+**Emenda:** CEO-DIRECTIVE-024 (isolamento permanente de workspaces)
 
 ## Objetivo
 
@@ -34,11 +35,16 @@ GitHub V6 → Validação → Operação
 | **AIC** | `OMEGA-Kernel-Sovereign` | ✅ | Código, CI/CD, implementação, governança técnica-as-code |
 | **Conselho** | — | — | Ratificação de decisões, ADRs, Gates, MIGs |
 
-**Regras:**
+**Regras (CEO-DIRECTIVE-024 — permanentes):**
 - Sem escrita cruzada entre repositórios.
 - Leitura cruzada permitida e recomendada.
-- PSA **não** executa commits no repo V6.
-- AIC **não** cria governança nem redefine ADRs sem ratificação.
+- PSA **não** executa git/commits/merges no repo V6 (`OMEGA-Kernel-Sovereign`).
+- AIC **não** altera documentos oficiais no `OMEGA-PSA-AUDIT-WORKSPACE`.
+- AIC **não** cria governança normativa nem redefine ADRs sem ratificação Conselho/PSA.
+- Comunicação institucional exclusivamente via: diretivas, pareceres, charters, SYNC-IN/OUT, deliberações.
+
+**Fluxo arquitetural (documento PSA → código AIC):**
+1. PSA produz documento → 2. Conselho aprova → 3. PSA encaminha orientação → 4. AIC reproduz no Kernel → 5. PSA valida
 
 ## Pacote SYNC-IN (PSA → AIC)
 

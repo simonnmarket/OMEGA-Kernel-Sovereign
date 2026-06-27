@@ -284,3 +284,50 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 **AIC STATUS:** STANDBY — aguardando TASK-0024 (MIG-4 Charter)
 
 **PRÓXIMO SYNC-IN ESPERADO:** TASK-0024 Charter MIG-4 (PSA → AIC)
+
+---
+
+## SYNC-IN | 2026-06-27
+
+**REF:** CEO-DIRECTIVE-024  
+**ORIGEM:** CEO / Conselho  
+
+**POLÍTICA RATIFICADA:**
+1. Isolamento permanente PSA ↔ AIC workspaces
+2. PSA não altera Kernel; AIC não altera PSA workspace
+3. Incidente `SOVEREIGN_TOPOLOGY.md` — fronteira operacional, sem impacto técnico
+
+**EXECUTAR (AIC):**
+- Sincronização residual `architecture/SOVEREIGN_TOPOLOGY.md` (MIG-3)
+- SYNC-OUT de encerramento do incidente
+
+**STATUS:** DIRETRIZ PERMANENTE — VIGENTE IMEDIATAMENTE
+
+---
+
+## SYNC-OUT | 2026-06-27 (AIC → PSA)
+
+**REF:** CEO-DIRECTIVE-024 · INCIDENTE TOPOLOGY-MIG3  
+**AÇÃO:** Sincronização residual `architecture/SOVEREIGN_TOPOLOGY.md`  
+
+**ALTERAÇÕES:**
+- Status ratificado (GATE-0, GATE-MIG1..3)
+- Camada `[3.5] PositionManager` no diagrama soberano
+- Nota MIG-3 (ordem migração vs runtime)
+- Pendências atualizadas (MIG-4..6, SIVR-1)
+
+**ARTEFATOS:**
+- `architecture/SOVEREIGN_TOPOLOGY.md` [ATUALIZADO]
+- `governance/CEO-DIRECTIVE-024.md` [NOVO — espelho SYNC-IN]
+- `governance/SYNC_PROTOCOL.md` [v3.0 — emenda isolamento]
+
+**CI:** pytest **45/45 PASS** (esperado pós-commit)
+
+**INCIDENTE TOPOLOGY-MIG3:** ✅ ENCERRADO (sincronização AIC concluída)
+
+**AIC STATUS:** STANDBY — aguardando TASK-0024 (MIG-4 Charter, PSA)
+
+**ATUALIZAR NO PSA-WORKSPACE:**
+1. Validar documentalmente topologia espelhada no Kernel
+2. Confirmar encerramento incidente fronteira
+3. Prosseguir TASK-0024 — MIG-4 Risk Engine Charter
