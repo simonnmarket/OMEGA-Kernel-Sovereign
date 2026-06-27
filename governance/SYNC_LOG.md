@@ -91,15 +91,9 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 
 **REF:** TASK-0022-INITIATION-001 · CEO-DIRECTIVE-021  
 **ORIGEM:** CEO / Conselho  
-**BASE:** SABM-001 · SIVR-0-CLOSURE-001 · AIC-CONCLUSION-SIVR1-GATE-MIG1-001 · TASK-0022-MIG2-CHARTER (PSA)
 
-**AUTORIZADO:**
-1. TASK-0022 — MIG-2 Charter (definição arquitetural only)
-2. Produção TASK-0022-MIG2-CHARTER-AIC-001
-
-**PROIBIDO:**
-- Implementação MIG-2
-- SIVR-1 / execution / reconciliation / failure injection / order_send
+**AUTORIZADO:** TASK-0022 — MIG-2 Charter (definição arquitetural only)  
+**PROIBIDO:** Implementação MIG-2 · SIVR-1 · order_send  
 
 **STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (charter only)
 
@@ -108,25 +102,53 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 ## SYNC-OUT | 2026-06-25 (AIC → PSA)
 
 **REF:** TASK-0022-SYNC-OUT-001  
-**TASK:** TASK-0022 — MIG-2 Charter (revisão técnica AIC)  
-**AÇÃO:** Entrega formal charter consolidado AIC para validação PSA  
 **ENTREGÁVEL:** `governance/TASK-0022-MIG2-CHARTER-AIC-001.md`  
 **VEREDITO AIC:** FAVORÁVEL COM RESSALVAS ESTRUTURAIS  
-**DIVERGÊNCIAS:** DIV-AIC-01 .. DIV-AIC-05  
+**STATUS:** ENTREGUE AO PSA
 
-**COMPLIANCE TASK-0022-INITIATION-001:**
-- Sem código executável ✅
-- Sem order_send / execution layer ✅
-- Sem runtime expansion ✅
-- SIVR-1 congelado ✅
+---
 
-**STATUS:** ENTREGUE AO PSA — aguardando validação  
+## SYNC-IN | 2026-06-25
 
-**SOLICITAÇÃO PSA:**
-1. Validar aderência ao charter PSA
-2. Avaliar DIV-AIC-*
-3. Consolidar versão PSA+AIC
-4. Emitir parecer PASS/FAIL documental
-5. Encaminhar ao Conselho
+**REF:** DEC-GATE-MIG2-001 · DEC-MIG2-001 · GATE-MIG2-PARECER-PSA-001  
+**ORIGEM:** Conselho / CEO / CFO  
 
-**PRÓXIMO SYNC-IN ESPERADO:** Parecer PSA TASK-0022 (PSA → AIC/Conselho)
+**DECISÕES RATIFICADAS:**
+1. GATE-MIG2 — ✅ FECHADO
+2. MIG-2 — ✅ VALIDADO
+3. TASK-0022 — ✅ ENCERRADA
+
+**STATUS:** RATIFICADO — em vigor
+
+---
+
+## SYNC-IN | 2026-06-25
+
+**REF:** TASK-0023-PREPARATION-001  
+**ORIGEM:** Conselho / CEO  
+
+**AUTORIZADO:** Commit + PR artefatos governança GATE-MIG2  
+**STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (governance only)
+
+---
+
+## SYNC-IN | 2026-06-25
+
+**REF:** TASK-0023-INITIATION-001  
+**ORIGEM:** Conselho / CEO  
+
+**AUTORIZADO:** TASK-0023 — MIG-3 Charter (planejamento only)  
+**PROIBIDO:** Implementação · order_send · SIVR-1  
+
+**STATUS:** AUTORIZAÇÃO CONCEDIDA — PROSSEGUIR (charter only)
+
+---
+
+## SYNC-OUT | 2026-06-25 (AIC → PSA)
+
+**REF:** TASK-0023-SYNC-OUT-001  
+**ENTREGÁVEL:** `governance/TASK-0023-MIG3-CHARTER-AIC-001.md`  
+**VEREDITO AIC:** FAVORÁVEL COM RESSALVAS DE SEQUÊNCIA  
+**STATUS:** ENTREGUE AO PSA
+
+**PRÓXIMO SYNC-IN ESPERADO:** Parecer PSA TASK-0023 · DEC-MIG3
