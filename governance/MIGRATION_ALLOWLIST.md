@@ -1,7 +1,7 @@
 # ALLOW-LIST DE MIGRAÇÃO (FASE 3) — DEC-3 / DEC-15
 
 **ID:** MIG-ALLOWLIST-V6 · **Regra:** contrato → interface → teste → implementação (CFO-02)
-**Atualizado:** 2026-06-25 (DEC-GATE-MIG2-001 — MIG-1/MIG-2 fechados)
+**Atualizado:** 2026-06-27 (DEC-GATE-MIG3-001 — MIG-1/MIG-2/MIG-3 fechados)
 
 > Migrar **apenas** os componentes abaixo, **um a um**, cada um passando por GATE-3
 > (contrato + interface + teste verde + aprovação PSA). **Proibido copiar em massa.**
@@ -10,7 +10,7 @@
 |----|-----------|---------------|-----|:--------:|:---------:|:-----:|:------------:|--------|
 | MIG-1 | Indicator Engine | BUG-001 + BUG-003 | ADR-010 | ✅ | ✅ | ✅ | ✅ | **GATE-MIG1 FECHADO** |
 | MIG-2 | Market Data Engine | BUG-002 | ADR-010 | ✅ | ✅ | ✅ | ✅ | **GATE-MIG2 FECHADO** |
-| MIG-3 | Position Manager | — | — | ⬜ | ⬜ | ⬜ | ⬜ | PENDENTE |
+| MIG-3 | Position Manager | — | ADR-012 | ✅ | ✅ | ✅ | ✅ | **GATE-MIG3 FECHADO** |
 | MIG-4 | Risk Engine | BUG-006 (SL/TP do sinal) | ADR-010 | ⬜ | ⬜ | ⬜ | ⬜ | PENDENTE |
 | MIG-5 | Signal Validation Layer | (arquitetural) | ADR-012 | ⬜ | ⬜ | ⬜ | ⬜ | PENDENTE |
 | MIG-6 | **Execution Engine Sovereign** | BUG-004, BUG-009, BUG-010 | ADR-009/011/012 | ⬜ | ⬜ | ⬜ | ⬜ | PENDENTE |

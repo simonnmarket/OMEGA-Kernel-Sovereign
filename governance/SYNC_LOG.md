@@ -228,3 +228,59 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 **STATUS:** IMPLEMENTAÇÃO ENTREGUE — aguardando GATE-MIG3-PARECER-PSA-001  
 
 **NOTA:** GATE-MIG3 **não fechado** — pendente parecer PSA + DEC-GATE-MIG3-001
+
+---
+
+## SYNC-IN | 2026-06-27
+
+**REF:** DEC-GATE-MIG3-001  
+**ORIGEM:** Conselho (CEO + CFO)  
+
+**DECISÕES RATIFICADAS:**
+1. GATE-MIG3 — ✅ FECHADO
+2. MIG-3 — ✅ VALIDADO (CA-01..CA-08 · CI 45/45)
+3. TASK-0023 — ✅ ENCERRADA
+4. MIG-3 integrado à linha-base soberana V6
+
+**AUTORIZADO (AIC):**
+- Merge `mig-3-implementation` → `main`
+- Sincronização registros institucionais
+
+**PROIBIDO:** Implementação MIG-4..6 · order_send · SIVR-1 · operações financeiras
+
+**PRÓXIMO:** TASK-0024 — MIG-4 Risk Engine Charter (PSA)
+
+**STATUS:** RATIFICADO — em vigor
+
+---
+
+## SYNC-OUT | 2026-06-27 (AIC → PSA)
+
+**REF:** DEC-GATE-MIG3-001  
+**AÇÃO:** Merge MIG-3 + fechamento GATE-MIG3 na linha-base `main`  
+
+**MERGE:** `mig-3-implementation` → `main` (fast-forward `a889495`..`ce94b19`)  
+
+**CI:** pytest **45/45 PASS**  
+
+**COMPONENTES NA LINHA-BASE:**
+- MIG-1 `indicator_engine/`
+- MIG-2 `market_data/` + `contracts/market_data_contract.py`
+- MIG-3 `position_manager/` + `contracts/position_contract.py`
+- Governança GATE-MIG1/MIG-2/MIG-3
+- SIVR-0 harness (`sivr/`)
+
+**ARTEFATOS GOVERNANÇA:**
+- `governance/DEC-GATE-MIG3-001.md` [NOVO]
+- `governance/MIGRATION_ALLOWLIST.md` [MIG-3 ✅]
+- `governance/knowledge_extraction/DECISION_REGISTRY.csv` [DEC-GATE-MIG3-001]
+
+**CONFIRMAÇÕES:**
+- `main` representa estado institucional aprovado (pós-push)
+- Implementação MIG-4 **NÃO AUTORIZADA**
+- SIVR-1 congelado
+- Operação financeira permanece proibida
+
+**AIC STATUS:** STANDBY — aguardando TASK-0024 (MIG-4 Charter)
+
+**PRÓXIMO SYNC-IN ESPERADO:** TASK-0024 Charter MIG-4 (PSA → AIC)
