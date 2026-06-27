@@ -331,3 +331,41 @@ Registro auditável de pacotes SYNC-IN (PSA/CFO/Conselho → AIC) e SYNC-OUT (AI
 1. Validar documentalmente topologia espelhada no Kernel
 2. Confirmar encerramento incidente fronteira
 3. Prosseguir TASK-0024 — MIG-4 Risk Engine Charter
+
+---
+
+## SYNC-IN | 2026-06-27
+
+**REF:** TASK-0023-V6-VALIDATION-001  
+**ORIGEM:** Conselho / PSA + AIC  
+
+**AUTORIZADO:** Validação integrada baseline V6 (MIG-1/2/3) — sem novo código de módulo  
+**PROIBIDO:** MIG-4 implementação · order_send · mercado real  
+
+**STATUS:** EM VALIDAÇÃO → execução AIC
+
+---
+
+## SYNC-OUT | 2026-06-27 (AIC → PSA)
+
+**REF:** TASK-0023-V6-VALIDATION-001  
+**AÇÃO:** Validação integrada baseline V6  
+
+**CRITÉRIOS:** CA-V6-01..06 = **PASS**  
+**CI:** pytest **53/53 PASS** (45 baseline + 8 integração)  
+
+**ARTEFATOS:**
+- `tests/test_v6_baseline_validation.py` [NOVO]
+- `validation/snapshots/v6_baseline_deterministic_snapshot.json` [NOVO]
+- `governance/V6_VALIDATION_REPORT.md` [NOVO]
+
+**VEREDITO AIC:** **READY FOR MIG-4 CHARTER** (não implementação)  
+
+**STATE FINGERPRINT:** `11a966a5c06967c7813af6f59bf967cb8d01290838ebad8158df743e729cc2ff`
+
+**ATUALIZAR NO PSA-WORKSPACE:**
+1. Revisão independente do relatório e snapshot
+2. Ratificação institucional V6 baseline integrado
+3. Emissão TASK-0024 — MIG-4 Risk Engine Charter (se aprovado)
+
+**AIC STATUS:** STANDBY — aguardando ratificação PSA/Conselho

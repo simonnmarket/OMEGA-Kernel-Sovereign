@@ -1,0 +1,33 @@
+{
+  "task_id": "TASK-0023-V6-VALIDATION-001",
+  "generated_at_utc": "2026-06-27T11:49:23.088727+00:00",
+  "pipeline": "MIG-2 \u2192 MIG-1 \u2192 MIG-3",
+  "deterministic_state": {
+    "closes_count": 20,
+    "closes_hash": "006c66ca3313d8f0a24f8158487228484044cfe4f2b7994420c0778958851f94",
+    "bars_finite": true,
+    "rsi": 53.23116609261711,
+    "ema": 3991.8914523962094,
+    "net_volume": 0.30000000000000004,
+    "gross_volume": 0.30000000000000004,
+    "open_tickets": [
+      1000,
+      1001,
+      1002
+    ],
+    "mark_prices": [
+      3990.0,
+      3990.0,
+      3990.0
+    ],
+    "profits": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ledger_event_count": 9,
+    "exposure_net_side": "LONG",
+    "is_flat": false
+  },
+  "state_fingerprint": "11a966a5c06967c7813af6f59bf967cb8d01290838ebad8158df743e729cc2ff"
+}
